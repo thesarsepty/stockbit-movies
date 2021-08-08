@@ -1,0 +1,5 @@
+export const SET_MOVIES = 'SET_MOVIES'
+export const SET_MOVIE_DETAILS = 'SET_MOVIE_DETAILS'
+export const SET_CURRENT_MOVIE = 'SET_CURRENT_MOVIE'
+export const SET_LOADING = 'SET_LODAING'
+export const SET_ERROR = 'SET_ERROR'
