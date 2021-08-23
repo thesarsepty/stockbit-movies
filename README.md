@@ -1,10 +1,12 @@
 # stockbit-movies
+  
+  // This is a simple project for movie list depend on search input
 
 # /logic-test
-  // node index.js
+  ``` node index.js ```
 
 # /react-dev
-  // npm install / yarn install
+  ``` npm install / yarn install ```
 
   ### `yarn start / npm start`
 

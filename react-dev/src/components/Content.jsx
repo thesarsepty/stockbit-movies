@@ -11,6 +11,7 @@ function Content(props) {
             <div 
             className=" position-absolute d-flex justify-content-center align-items-center rounded-circle bg-white zoom-img"
             onClick={() => {props.popUpImage({showModal: true, img: props.movie.Poster})}}
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pop up image"
             >
               <span className=""><i className="fas fa-search-plus"></i></span>
             </div>
@@ -18,6 +19,7 @@ function Content(props) {
             src={props.movie.Poster} 
             className="img-fluid rounded" alt=""
             onClick={() => history.push(`/details/${props.movie.imdbID}`)}
+            data-bs-toggle="tooltip" data-bs-placement="bottom" title="See movie detail"
             />
           </div>
           <div className="d-flex justify-content-center">
