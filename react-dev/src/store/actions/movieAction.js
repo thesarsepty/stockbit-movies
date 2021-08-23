@@ -7,20 +7,23 @@ const access_key = process.env.REACT_APP_ACCESSKEY
 
 export function fetchMovies(keyword, page){
   return (dispatch, getState) => {
+
+    const prevMovies = getState().movieReducer
+    
     dispatch(setLoading(true))
     axios({
       url: `http://www.omdbapi.com?apikey=${access_key}&s=${keyword}&page=${page}`,
       method: 'GET'
     })
     .then((movies) => {
-      // console.log(movies.data, 'action')
-      // console.log(movies.data.Response, 'responact');
+      
       if (movies.data.Response === "True"){
         dispatch(setError(''))
         dispatch({
           type: SET_MOVIES,
-          payload: movies.data.Search
+          payload: prevMovies.current_movie.title !== keyword ? movies.data.Search : [...prevMovies.movies, ...movies.data.Search]
         })
+        
         const next = movies.data.Search.length > 0 ? true : false
         dispatch({
           type: SET_CURRENT_MOVIE,

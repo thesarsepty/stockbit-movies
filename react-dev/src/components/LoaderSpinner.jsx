@@ -3,7 +3,7 @@ import Loader from 'react-loader-spinner'
 function LoaderSpinner() {
   return (
     <Loader 
-    type="Grid"
+    type="ThreeDots"
     color="#475e6e"
     height={100}
     width={100}

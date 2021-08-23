@@ -12,33 +12,6 @@ code {
     monospace;
 }
 
-/* .details-font {
-  color: white;
-} */
-
-/* NAVBAR */
-/* .navbar-brand{
-  font-size: 2rem;
-  color: #000;
-}
-
-.navbar-brand:hover{
-  color: #000;
-}
-.navbar a{
-  cursor: pointer;
-}
-.nav-link{
-  margin-right: 10px;
-  margin-left: 10px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.nav-link:hover{
-  color: rgb(73, 73, 73);
-} */
-
 .search{
   height: 40px;
   width: 50%;
@@ -73,18 +46,19 @@ h1{
 }
 
 .btn1{
-  width: 50%;
+  width: 45%;
   outline: none;
   border: none;
-  background:  #da5656;
+  background:  #a1a1a1;
   color: white;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 8px;
+  font-size: 1.3em;
 }
 
 .btn1:hover{
-  background-color: #ff9a9a;
+  background-color: #c0c0c0;
   transition: 0.5s;
 }
 

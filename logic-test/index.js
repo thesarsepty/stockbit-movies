@@ -5,6 +5,7 @@ function groupAnagram(arr, groups = []) {
     groups.push(arr)
     return groups
   }
+  
   const firstWord = arr[0]
   const group = [firstWord]
   const objWord = {}

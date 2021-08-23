@@ -8,17 +8,20 @@ function Home() {
   const dispatch = useDispatch()
   const movies = useSelector(state => state.movieReducer.movies)
   const error = useSelector(state => state.errorReducer.error)
+  // const current_movie = useSelector(state => state.movieReducer.current_movie)
   const [keyword, setKeyword] = useState('')
   
   function handleSearchClick(input){
+
     if(input){
       let modifiedInput = input.split(' ').join('+')
       dispatch(fetchMovies(modifiedInput, 1))
     }
   }
-  // console.log(error, 'erearea')
+  
   return (
     <div className="container py-5 text-center">
+      <h1 className="text-muted">MOVIE LIST</h1>
       <section className="d-flex py-5 sticky-top">
         
         <input 

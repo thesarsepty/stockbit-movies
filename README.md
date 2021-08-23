@@ -4,7 +4,7 @@
   // node index.js
 
 # /react-dev
-  // npm instal / yarn instal
+  // npm install / yarn install
 
   ### `yarn start`
 

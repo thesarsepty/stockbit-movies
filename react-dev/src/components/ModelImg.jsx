@@ -1,5 +1,5 @@
 function ModelImg(props) {
-  console.log(props, 'modal');
+ 
   return (
     <div className="modal fade show pop-up">
       <div className="modal-header">
